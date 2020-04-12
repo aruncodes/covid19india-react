@@ -847,7 +847,8 @@ h6 {
       }
 
       .result-type {
-        background: $gray-light;
+        background: $yellow-light;
+        color: $orange;
         padding: 0.25rem;
         border-radius: 2px;
         font-size: 0.75rem;
@@ -1730,13 +1731,13 @@ table {
 
 .disabled {
   input.switch {
-    background: $gray-light;
-    border: $gray-light 2px solid;
-    cursor: not-allowed;
+    background: $gray-light !important;
+    border: $gray-light 2px solid !important;
+    cursor: not-allowed !important;
   }
 
   input.switch::after {
-    background: $gray-light;
+    background: $gray-light !important;
   }
 }
 
