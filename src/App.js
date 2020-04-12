@@ -27,42 +27,49 @@ function App() {
       view: Home,
       displayName: 'Home',
       animationDelayForNavbar: 0.2,
+      showInNavbar: true,
     },
     {
       pageLink: '/demographics',
       view: PatientDB,
       displayName: 'Demographics',
       animationDelayForNavbar: 0.3,
+      showInNavbar: true,
     },
     {
       pageLink: '/deepdive',
       view: DeepDive,
       displayName: 'Deep Dive',
       animationDelayForNavbar: 0.4,
+      showInNavbar: true,
     },
     {
       pageLink: '/links',
       view: Links,
       displayName: 'Helpful Links',
-      animationDelayForNavbar: 0.4,
-    },
-    {
-      pageLink: '/faq',
-      view: FAQ,
-      displayName: 'About',
       animationDelayForNavbar: 0.5,
+      showInNavbar: true,
     },
     {
       pageLink: '/essentials',
       view: Resources,
       displayName: 'Essentials',
+      animationDelayForNavbar: 0.6,
+      showInNavbar: true,
+    },
+    {
+      pageLink: '/faq',
+      view: FAQ,
+      displayName: 'FAQ',
       animationDelayForNavbar: 0.7,
+      showInNavbar: true,
     },
     {
       pageLink: '/state/:stateName',
       view: State,
       displayName: 'State',
       animationDelayForNavbar: 0.8,
+      showInNavbar: false,
     },
   ];
 
@@ -72,7 +79,7 @@ function App() {
         <Route
           render={({location}) => (
             <div className="Almighty-Router">
-              <Navbar />
+              <Navbar pages={pages} />
               <Route exact path="/" render={() => <Redirect to="/" />} />
               <Switch location={location}>
                 {pages.map((page, i) => {
