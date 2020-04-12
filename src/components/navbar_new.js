@@ -62,6 +62,9 @@ function Navbar({pages}) {
             }
             return null;
           })}
+          <div className="expand-bottom">
+            <h5>A crowdsourced initiative.</h5>
+          </div>
         </div>
       )}
     </div>

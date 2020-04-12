@@ -263,6 +263,14 @@ h6 {
         background: $gray-hover;
       }
     }
+
+    .expand-bottom {
+      align-self: flex-start;
+      border: 0;
+      &:hover {
+        background: none;
+      }
+    }
   }
 }
 
@@ -3150,15 +3158,16 @@ select {
       flex-direction: row;
       left: 5rem;
       top: 0;
-      background: $pblue;
+      background: $gray-light-opaque;
       padding-top: 5.25rem;
       padding-left: 1rem;
       & > * {
         height: 1.5rem;
         border: 0;
-        border-left: 1px solid #ffffff;
+        border-left: 1px solid $gray-light;
         width: 7rem;
-        color: #ffffff;
+        color: $gray;
+        font-weight: 600;
       }
     }
   }
